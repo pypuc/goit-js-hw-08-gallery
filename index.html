@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src=""></script>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <ul class="gallery js-gallery">
+      <li class="gallery__item">
+        <a
+          class="gallery__link"
+          href="https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg"
+        >
+          <img
+            class="gallery__image"
+            src="https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg"
+            data-source="https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg"
+            alt="Hokkaido Flower"
+          />
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a
+          class="gallery__link"
+          href="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg"
+        >
+          <img
+            class="gallery__image"
+            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
+            data-source="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg"
+            alt="Container Haulage Freight"
+          />
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a
+          class="gallery__link"
+          href="https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg"
+        >
+          <img
+            class="gallery__image"
+            src="https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg"
+            data-source="https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg"
+            alt="Aerial Beach View"
+          />
+        </a>
+      </li>
+    </ul>
+    <div class="lightbox js-lightbox">
+      <div class="lightbox__overlay"></div>
+      <div class="lightbox__content">
+        <img class="lightbox__image" src="" alt="" />
+      </div>
+      <button
+        type="button"
+        class="lightbox__button"
+        data-action="close-lightbox"
+      ></button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
